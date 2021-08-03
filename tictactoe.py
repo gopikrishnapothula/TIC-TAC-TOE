@@ -1,7 +1,4 @@
-import sys
 
-n=[i for i in range(1,10)]
-bd=[" " for i in range(9)]
 def board():
     r1="|{}|{}|{}|".format(bd[0],bd[1],bd[2])
     r2="|{}|{}|{}|".format(bd[3],bd[4],bd[5])
@@ -51,6 +48,10 @@ def isdraw():
     if " " not in bd:
         return True
 
+
+import sys
+n=[i for i in range(1,10)]
+bd=[" " for i in range(0,9)]
 print("TIC-TAC-TOE GAME")
 p1=input("Enter player1 name : ")
 p2=input("Enter player2 name : ")
